@@ -1,8 +1,20 @@
 version: 2
 jobs:
-  build:
+  bobby:
     docker:
       - image: cimg/ruby:2.7.4
     steps:
       - checkout
-      - run: echo "A first hello"
+      - run: echo "This is Bobby"
+  sally:
+    docker:
+      - image: cimg/ruby:2.7.4
+    steps:
+      - checkout
+      - run: echo "This is Sally"
+  workflows:
+    version: 2
+    bobby_sally:
+      jobs:
+        - bobby
+        - sally
