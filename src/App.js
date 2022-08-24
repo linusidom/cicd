@@ -14,7 +14,7 @@ function App() {
 
   useEffect(()=> {
     dispatch(robotSliceActions.loadRobots())
-  },[])
+  },[dispatch])
 
 
   return (
