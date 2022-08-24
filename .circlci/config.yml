@@ -5,4 +5,5 @@ jobs:
       - image: cimg/base:2022.05
     steps:
       - checkout
-      - run: echo "A first hello" 
+      - run: echo "A first hello"
+      
