@@ -2,8 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: cimg/base:2022.05
+      - image: cimg/ruby:2.7.4
     steps:
       - checkout
       - run: echo "A first hello"
-      
